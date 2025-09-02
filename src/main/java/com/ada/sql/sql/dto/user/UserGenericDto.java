@@ -107,4 +107,17 @@ public class UserGenericDto {
     public void setRoles(List<RoleEnum> roles) {
         this.roles = roles;
     }
+
+    @Override
+    public String toString() {
+        return "UserGenericDto{" +
+                "idUser='" + idUser + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", dateCreation=" + dateCreation +
+                ", dateUpdate=" + dateUpdate +
+                ", roles=" + roles +
+                '}';
+    }
 }

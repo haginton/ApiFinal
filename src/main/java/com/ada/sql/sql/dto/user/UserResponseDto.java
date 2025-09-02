@@ -47,4 +47,14 @@ public class UserResponseDto {
     public void setDateCreation(LocalDateTime dateCreation) {
         this.dateCreation = dateCreation;
     }
+
+    @Override
+    public String toString() {
+        return "UserResponseDto{" +
+                "idUser='" + idUser + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", dateCreation=" + dateCreation +
+                '}';
+    }
 }
